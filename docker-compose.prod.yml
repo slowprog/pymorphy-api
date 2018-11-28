@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  api:
+    container_name: pyphrasy_api
+    environment:
+      ALLOWED_HOSTS: 'localhost 127.0.0.1'
+    build:
+      context: .
+      dockerfile: ./docker/prod/Dockerfile
+    ports:
+      - 8000:8000
+    restart: unless-stopped
