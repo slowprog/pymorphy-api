@@ -33,10 +33,10 @@ The response is in json format, which will contain an option for each of the for
 
 ```json
 {
-    success: true,
-    data: {
-        gent,plur: "неожиданных дедлайнов",
-        loct: "неожиданном дедлайне"
+    "success": true,
+    "data": {
+        "gent,plur": "неожиданных дедлайнов",
+        "loct": "неожиданном дедлайне"
     }
 }
 ```
@@ -45,7 +45,7 @@ In case of an error, the key date will contain the text of the error:
 
 ```json
 {
-    success: false,
-    data: "The phrase parameter is not specified."
+    "success": false,
+    "data": "The phrase parameter is not specified."
 }
 ```
